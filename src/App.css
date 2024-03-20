@@ -1,38 +1,82 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFC090;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App>h1 {
+  background: none;
+  color: #3D8361;
+  font-family: serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu, .quiz, .end{
+  width: 600px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-radius: 8px;
+  background: linear-gradient(#749F82,#156f5d);
+}
+
+.menu input {
+  width: 320px;
+  font-size: 20px;
+  margin: 5px;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: #647E68;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.menu input::placeholder{
+  color: white;
+  opacity: 0.5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu input::selection{
+  background-color: #93a896;
+}
+
+.menu button {
+  width: 120px;
+  font-size: 18px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.options button {
+  width: 300px;
+  font-size: 18px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 8px;
+  border: 2px solid;
+  color: #FFC090;
+  background-color: #425F57;
+}
+
+#last-btn{
+  width: 150px;
+  margin: 10px;
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 5px;
+  background-color:#DBC8AC;
+  color: #425F57;
 }
